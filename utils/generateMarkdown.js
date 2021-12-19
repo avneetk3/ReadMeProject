@@ -97,7 +97,7 @@ function generateMarkdown(userResponses) {
   // Generate markdown for the top required portions of the README
   let draftMarkdown = 
   `# ${userResponses.title}
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) 
+  ![Badge for GitHub repo license](https://shields.io/category/license/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) 
   Check out the badges hosted by [shields.io](https://shields.io/).
   
   
