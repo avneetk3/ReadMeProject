@@ -1,7 +1,7 @@
 # ReadMeProject
 Adding the read me file generated in code here. The file name in code is ExampleREADME.md 
 # Create REadme using Node JS 
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/avneetk3/https://github.com/avneetk3/ReadMeProject?style=flat&logo=appveyor) 
+  ![Badge for GitHub license](https://shields.io/category/license/avneetk3/https://github.com/avneetk3/ReadMeProject?style=flat&logo=appveyor) 
   Check out the badges hosted by [shields.io](https://shields.io/).
   
   
