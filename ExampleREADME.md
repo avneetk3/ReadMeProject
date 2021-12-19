@@ -1,5 +1,5 @@
 # Create REadme using Node JS 
-  ![Badge for GitHub repo to license](https://shields.io/category/license/avneetk3/https://github.com/avneetk3/ReadMeProject?style=flat&logo=appveyor) 
+  ![Badge for GitHub repo license](https://shields.io/category/license/avneetk3/https://github.com/avneetk3/ReadMeProject?style=flat&logo=appveyor) 
   Check out the badges hosted by [shields.io](https://shields.io/).
   
   
