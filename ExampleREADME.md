@@ -1,12 +1,12 @@
-# Create REadme using Node JS 
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/avneetk3/https://github.com/avneetk3/ReadMeProject?style=flat&logo=appveyor) 
+# ReadMe
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/avneetk3/https://github.com/avneetk3/ReadMeProject/blob/master/?style=flat&logo=appveyor) 
   Check out the badges hosted by [shields.io](https://shields.io/).
   
   
   ## Description 
    
   
-  This prject is to create professional read me file basedon user input using node JS.
+  This is to create README file based on user answers
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -16,34 +16,34 @@
   
   ## Installation
   
-  *Steps required to install project and how to get the development environment running:*
+  *Steps required to install project and get environment running:*
   
-  node js installed and run npm init in terminal
+  install node js by npm init and execute the file by command node index.js
   
   ## Usage 
   
-  *Instructions and examples for use:*
+  *Instructions for use:*
   
-  In the terminal run command, node index.js
+  node index.js
   
   ## Contributing
   
   *Add contributuions.*
   
-  none 
+  none
   
   ## Tests
   
   *Tests for application and how to run them:*
   
-  none 
+  nothing
   
   ## License
   
-  GNU LGPLv3
+  GNU GPLv3
   
     ## For any questions, please contact me , given information : 
-    GitHub: [@avneetk3](https://github.com/avneetk3/ReadMeProject)
+    GitHub: [@avneetk3](https://github.com/avneetk3/ReadMeProject/blob/master/)
 
   Email: avneek57@gmail.com
   
