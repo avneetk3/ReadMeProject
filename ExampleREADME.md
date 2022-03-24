@@ -1,4 +1,4 @@
-# ReadMe
+# ReadMe Generator
   ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/avneetk3/https://github.com/avneetk3/ReadMeProject/blob/master/?style=flat&logo=appveyor) 
   Check out the badges hosted by [shields.io](https://shields.io/).
   
@@ -6,19 +6,21 @@
   ## Description 
    
   
-  This is to create README file based on user answers
+  to generate read me
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Tests](#tests)
-  * [License](#license)
+  * [License](#license) ![GNU GPLv3 License](https://img.shields.io/badge/license-GNU%20GPLv3)
+     
+  * [License Link] (#link) undefined
   
   ## Installation
   
   *Steps required to install project and get environment running:*
   
-  install node js by npm init and execute the file by command node index.js
+  npm install
   
   ## Usage 
   
@@ -30,13 +32,13 @@
   
   *Add contributuions.*
   
-  none
+  implement license state
   
   ## Tests
   
   *Tests for application and how to run them:*
   
-  nothing
+  none
   
   ## License
   

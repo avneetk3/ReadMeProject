@@ -1,3 +1,5 @@
+//import fetch from "node-fetch";
+const fetch = require('node-fetch');
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -17,13 +19,14 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  var requestUrl= "https://api.github.com/licenses";
+  var url= "https://api.github.com/licenses";
  // let data ="";
-  fetch(requestUrl) 
+ var i;
+  fetch(url) 
   .then(response => response.json())
   .then(data => {
-    if(data[i]['spdx_id']== license)
-      return data[i]['url'];
+    if(data[data.i]['spdx_id']== license)
+      return data[data.i]['url'];
     else
       return "";
   })
@@ -36,7 +39,6 @@ function renderLicenseLink(license) {
 } */
 
 // TODO: Create a function to generate markdown for README
-
 function generateMarkdown(userResponses) {
 
   // Generate Contents  based on userResponses
@@ -56,7 +58,7 @@ function generateMarkdown(userResponses) {
 
 
   // Generate markdown for README
-  let draftFinal = 
+  let finalResponse = 
   `# ${userResponses.title}
   ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) 
   Check out the badges hosted by [shields.io](https://shields.io/).
@@ -69,16 +71,16 @@ function generateMarkdown(userResponses) {
   `
 
   // Add Table of Contents
-  draftFinal += draftAns;
+  finalResponse += draftAns;
  
-  draftFinal += `
+  finalResponse += `
   * [License](#license) ${renderLicenseBadge(userResponses.license)} 
   * [License Link] (#link) ${renderLicenseLink(userResponses.license)}`;
   
 
   if (userResponses.installation !== '') {
   
-  draftFinal +=
+  finalResponse +=
   `
   
   ## Installation
@@ -90,7 +92,7 @@ function generateMarkdown(userResponses) {
   
   if (userResponses.usage !== '') {
   
-  draftFinal +=
+  finalResponse +=
   
   `
   
@@ -104,7 +106,7 @@ function generateMarkdown(userResponses) {
   
   if (userResponses.contributing !== '') {
 
-  draftFinal +=
+  finalResponse +=
      
 
   `
@@ -117,7 +119,7 @@ function generateMarkdown(userResponses) {
   };
   if (userResponses.tests !== '') {
   
-  draftFinal +=
+  finalResponse +=
   `
   
   ## Tests
@@ -129,7 +131,7 @@ function generateMarkdown(userResponses) {
 
 
   // License section is required
-  draftFinal +=
+  finalResponse +=
   `
   
   ## License
@@ -137,19 +139,17 @@ function generateMarkdown(userResponses) {
   ${userResponses.license}
   `;
   if (userResponses.email !== null) {
-  draftFinal +=
+  finalResponse +=
   `
     ## For any questions, please contact me , given information : 
     GitHub: [@${userResponses.username}](${userResponses.repo})
 
   Email: ${userResponses.email}
   `};
-  return draftFinal;
+  return finalResponse;
   
 }
 
 module.exports = generateMarkdown;
 
 
-
-//module.exports = generateMarkdown;
